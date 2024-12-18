@@ -1,5 +1,5 @@
 ---
-title: 如何匯入 resource to terraform modules
+title: 如何匯入 resource to terraform
 tags: [terraform]
 
 ---
