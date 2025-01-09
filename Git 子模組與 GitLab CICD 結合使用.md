@@ -1,12 +1,12 @@
 ---
 title: Git 子模組與 GitLab CICD 結合使用
-tags: [cicd, git]
+tags: [cicd, git, submodule]
 
 ---
 
 ---
 title: Git 子模組與 GitLab CICD 結合使用
-tags: [cicd, git]
+tags: [cicd, git, submodule]
 
 ---
 
@@ -34,6 +34,16 @@ git submodule update --init
 ```shell
 git submodule sync --recursive
 git submodule update --init --recursive
+```
+
+# 使用絕對 URL
+
+這種情況下，不需要配置其他變量，但需要個人存取權杖 (token)。
+
+```toml
+[submodule "project"]
+  path = project
+  url = https://gitlab.com/group/project.git
 ```
 
 # 參考
